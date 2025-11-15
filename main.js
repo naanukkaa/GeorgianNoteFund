@@ -107,4 +107,32 @@ $(document).ready(function(){
     });
 });
 
+// -------- Firebase Phone Authentication --------
+// JS
+var recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+  'size': 'invisible',
+  'callback': (response) => {
+  }
+});
+
+var phoneNumber = "+995579089779"; // replace with actual number
+var appVerifier = recaptchaVerifier;
+
+firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+  .then((confirmationResult) => {
+    window.confirmationResult = confirmationResult;
+  }).catch((error) => {
+    console.error(error);
+  });
+
+  var code = "123456"; // user input
+confirmationResult.confirm(code).then((result) => {
+  var user = result.user;
+  console.log("Phone authenticated user:", user);
+}).catch((error) => {
+  console.error(error);
+});
+
+
+
 

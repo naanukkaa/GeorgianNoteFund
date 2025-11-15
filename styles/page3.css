@@ -42,6 +42,10 @@
             opacity: 0.8;
         }
 
+        .hero-content {
+            animation: heroFadeIn 1.2s ease-out;
+        }
+
         @keyframes heroFadeIn {
             from {
                 opacity: 0;
@@ -212,82 +216,6 @@
             opacity: 0.8;
         }
 
-        .page-container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        main {
-            flex: 1;
-            width: 100%;
-        }
-
-        .hero {
-            background-color: #fff;
-            padding: 4rem 1rem;
-        }
-
-        .hero-content {
-            max-width: 56rem;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2rem;
-            font-family: 'DM Grigol Robakidze', sans-serif;
-            color: #000;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero p {
-            font-size: 1.125rem;
-            font-family: 'DM Grigol Robakidze', sans-serif;
-            color: #666;
-            margin-bottom: 2rem;
-        }
-
-        .featured {
-            background-color: #f9f9f9;
-            padding: 4rem 1rem;
-        }
-
-        .featured-content {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .featured h2 {
-            font-size: 1.875rem;
-            font-family: 'DM Grigol Robakidze', sans-serif;
-            color: #000;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .page {
-            display: none;
-        }
-
-        .page, .active {
-            display: block;
-        }
-
-        a {
-            color: #2E2E2E;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        header a {
-            color: inherit;
-        }
-
         .container {
             max-width: 100%;
             margin: 0 auto;
@@ -430,19 +358,6 @@
             text-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
 
-        .hero-new {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 4rem 1rem;
-            background-color: #f7f7f7;
+        .footer-container.mobile{
+            display: none;
         }
-
-        .hero-left, .hero-right {
-            flex: 1 1 300px;
-            min-height: 300px;
-            background-color: #e5e5e5;
-            border-radius: 12px;
-        }
-
-
