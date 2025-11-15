@@ -542,8 +542,7 @@
             background-color: #f7f7f7;
         }
 
-        .hero-left,
-        .hero-right {
+        .hero-left, .hero-right {
             flex: 1 1 300px;
             min-height: 300px;
             background-color: #e5e5e5;
@@ -695,4 +694,6 @@
             align-items: center;
         }
 
-
+        .footer-container.mobile{
+            display: none;
+        }
