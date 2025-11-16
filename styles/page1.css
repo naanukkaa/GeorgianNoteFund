@@ -5,12 +5,7 @@
             font-style: normal;
         }
 
-        @font-face {
-            font-family: 'BPG Glaho WEB Caps';
-            src: url('https://fonts.cdnfonts.com/s/14951/bpg_glaho_web_caps.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
+        @import url("//cdn.web-fonts.ge/fonts/bpg-glaho-web-caps/css/bpg-glaho-web-caps.min.css");
 
         html {
             scroll-behavior: smooth;
