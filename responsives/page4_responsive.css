@@ -19,11 +19,22 @@
     .sq-card {
         flex: 1 1 calc(50% - 15px);
     }
+    .hero-new {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.75rem;
+    }
+    .featured h2 {
+        font-size: 3rem;
+    }
+    .books-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
-
 /* TABLET — 768px */
 @media (max-width: 768px) {
 
@@ -40,7 +51,37 @@
     }
 
     /* Hero / Featured Section */
-    
+    .featured-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .featured-content img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .featured-content .text {
+        width: 100%;
+    }
+
+    /* Book Grid */
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .book-card {
+        padding: 18px;
+    }
+
+    /* Subscribe Box */
+    .subscribe-box {
+        width: 90%;
+        padding: 25px;
+    }
+
     /* Footer */
     footer {
         padding: 30px;
@@ -97,10 +138,36 @@
     .login-text, .register-text {
         display: none;
     }
+    .hero {
+        padding: 6rem 1rem;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .sq-card {
+        flex: 1 1 100%;
+    }
+    .subscribe-box {
+        padding: 2rem 1rem;
+    }
+    .sec-title {
+        font-size: 22px;
+    }
+    .sec-link {
+        font-size: 16px; 
+    }
 }
 
 @media (min-width: 640px) {
-    
+    .featured h2 {
+        font-size: 2.25rem;
+    }
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .placeholder-content h1 {
+        font-size: 3rem;
+    }
 }
 
 /* MOBILE — 425px */
@@ -116,6 +183,50 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
+    }
+
+    /* Hero / Featured Section */
+    .featured-content {
+        padding: 20px;
+    }
+
+    .featured-content img {
+        width: 100%;
+    }
+
+    .featured-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .featured-content p {
+        font-size: 0.95rem;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .book-card {
+        padding: 15px;
+    }
+
+    .subscribe-box {
+        max-width: 400px;
+        padding: 18px;
+    }
+
+    .subscribe-box h3 {
+        font-size: 20px;
+    }
+
+    .subscribe-box input, .subscribe-box button, .subscribe-box textarea {
+        width: 360px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-box  {
+        width: 100%;
     }
 
     footer {

@@ -3,160 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ქართული ნოტების ფონდი</title>
+  <title>ქართული ნოტების ფონდი - რეგისტრაცია</title>
   <link rel="stylesheet" href="../styles/page2.css">
   <link rel="stylesheet" href="../responsives/page2_responsive.css">
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
-  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
-  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <script src="../main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script src="../main.js" defer></script>
 </head>
 <body>
-  <div class="page-container">
-    <header>
-      <div class="header-container">
-        <a href="../index.html" class="logo-link">
-          <img src="../images/logo.png" alt="Logo" class="logo-img">
-        </a>
-        <nav class="main-nav">
-          <a href="../index.html">მთავარი</a>
-          <a href="../other pages/catalog.html">კატალოგი</a>
-        </nav>
-        <div class="auth-section">
-          <a href="../other pages/login.html" class="login-link">
-            <img src="https://api.builder.io/api/v1/image/assets/TEMP/dae37588cbb9421d7200106dd6a5bb48780f6a6b?width=140" alt="Login" class="login-img">
-            <span class="login-text">შესვლა</span>
-          </a>
-          <a href="../other pages/register.html" class="register-link">
-            <img src="https://api.builder.io/api/v1/image/assets/TEMP/ffa92627277a2aaacb05d07f948fd8316918abb1?width=136" alt="Registration" class="register-img">
-            <span class="register-text">რეგისტრაცია</span>
-          </a>
-        </div>
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
-      </div>
-      <nav class="mobile-nav">
+<div class="page-container">
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/logo.png" alt="Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
         <a href="../index.html">მთავარი</a>
         <a href="../other pages/catalog.html">კატალოგი</a>
       </nav>
-    </header>
+      <div class="auth-section">
+        <a href="../other pages/login.html" class="login-link">
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/dae37588cbb9421d7200106dd6a5bb48780f6a6b?width=140" alt="Login" class="login-img">
+          <span class="login-text">შესვლა</span>
+        </a>
+        <a href="../other pages/register.html" class="register-link">
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/ffa92627277a2aaacb05d07f948fd8316918abb1?width=136" alt="Registration" class="register-img">
+          <span class="register-text">რეგისტრაცია</span>
+        </a>
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="../index.html">მთავარი</a>
+      <a href="../other pages/catalog.html">კატალოგი</a>
+    </nav>
+  </header>
 
-    
-    <footer>
+  <!-- Register Form -->
+  <div class="page-container">
+  <section class="register-section">
+    <div class="register-container">
+      <h2 class="register-title">რეგისტრაცია</h2>
+      <form class="register-form">
 
-        <div class="footer-container container desktop">
-            <div class="section-one">
-                <p class="footer-p">ვებსაიტი წარმოადგენს ეროვნულ, ინოვაციურ პროექტს</p>
-                <p class="footer-mini-p">ა(ა)იპ - „ქართული ნოტების ფონდი"<br>(ს/კ:405671072)</p>
-                <div class="icons">
-                    <a href="https://www.instagram.com/notebiorg/" target="_blank">
-                        <img src="../images/instagram.png" class="footer-icon-insta">
-                    </a>
-                    <a href="https://www.youtube.com/@notebiorg" target="_blank">
-                        <img src="../images/youtube.png" class="footer-icon-wide">
-                    </a>
-                    <a href="https://wolt.com/ka/geo/tbilisi/venue/notebi?fbclid=IwY2xjawOFa61leHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwCGNhbGxzaXRlATcAAR4j-UbE-j4gifzkyYPrz33tMMKu4AI9OkT_-V_DPhLnDJVofDJkUA0vV1-ONA_aem_Px8iH2tRiESQrX96Hx3XIw" target="_blank">
-                        <img src="../images/wolt.png" class="footer-icon-wide">
-                    </a>
-                    <a href="https://x.com/notebiorg" target="_blank">
-                        <img src="../images/X.png" class="footer-icon">
-                    </a>
-                    <a href="https://www.facebook.com/notebiorg" target="_blank">
-                        <img src="../images/facebook.png" class="footer-icon">
-                    </a>
-                </div>
-            </div>
-
-            <div class="section-two">
-              no idea
-            </div>
-
-            <div class="section-three">
-                <h3 class="contact-title">კონტაქტი</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <p>თბილისი, საქართველო</p>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">✉️</span>
-                        <p>fundofgeorgiannotes@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📞</span>
-                        <p>+995 599 70 86 49</p>
-                    </div>
-                </div>
-            </div>
+        <div class="form-group">
+          <label>სახელი</label>
+          <input type="text" id="name" required>
         </div>
 
-        <div class="footer-container container mobile">
-            <div class="section-one">
-                <p class="footer-p">ვებსაიტი წარმოადგენს ეროვნულ, ინოვაციურ პროექტს</p>
-                <p class="footer-mini-p">ა(ა)იპ - „ქართული ნოტების ფონდი"<br>(ს/კ:405671072)</p>
-                <div class="icons">
-                    <a href="https://www.instagram.com/notebiorg/" target="_blank">
-                        <img src="../images/instagram.png" class="footer-icon-insta">
-                    </a>
-                    <a href="https://www.youtube.com/@notebiorg" target="_blank">
-                        <img src="../images/youtube.png" class="footer-icon-wide">
-                    </a>
-                    <a href="https://open.spotify.com/show/5ZR3dUtpLRuNukxr3XTURy" target="_blank">
-                        <img src="../images/spotify.png" class="footer-icon">
-                    </a>
-                    <a href="https://x.com/notebiorg" target="_blank">
-                        <img src="../images/X.png" class="footer-icon">
-                    </a>
-                    <a href="https://www.facebook.com/notebiorg" target="_blank">
-                        <img src="../images/facebook.png" class="footer-icon">
-                    </a>
-                </div>
-            </div>
-
-            <details class="footer-dropdown">
-                <summary>მენიუ</summary>
-                <div class="dropdown-content">
-                    <a href="../index.html">მთავარი</a>
-                    <a href="../other pages/catalog.html">კატალოგი</a>
-                </div>  
-            </details>
-
-            <details class="footer-dropdown">
-                <summary>კონტაქტი</summary>
-                <div class="dropdown-content">
-                    <p>📍 თბილისი, საქართველო</p>
-                    <p>✉️ info@notebi.org</p>
-                    <p>📞 +995 555 123 456</p>
-                </div>
-            </details>
+        <div class="form-group">
+          <label>ელ.ფოსტა</label>
+          <input type="email" id="email" required>
         </div>
-        <div class="footer-bottom">
-            <p class="designer-credit">
-            დიზაინი დამზადებულია
-            <a href="https://www.instagram.com/_nanuukkaa_/" target="_blank" class="designer-link">
-                ნანა კუპრეიშვილის
-            </a>
-            მიერ :)
-            </p>
+        <div class="form-group">
+          <label>პაროლი</label>
+          <input type="password" id="password" required>
+
+          <ul id="password-rules" class="rules">
+            <li id="rule-length">✗ მინიმუმ 6 სიმბოლო</li>
+            <li id="rule-upper">✗ ერთი დიდი ასო (A–Z)</li>
+            <li id="rule-lower">✗ ერთი პატარა ასო (a–z)</li>
+            <li id="rule-number">✗ ერთი რიცხვი (0–9)</li>
+          </ul>
         </div>
-    </footer>
-    
+
+
+        <button type="submit" id="submit" class="register-btn">რეგისტრაცია</button>
+        <div id="recaptcha-container" class="form-group"></div>
+        <p class="login-redirect">
+          უკვე გაქვს ანგარიში? <a href="../other pages/login.html">შესვლა</a>
+        </p>
+
+      </form>
+    </div>
+  </section>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container container desktop">
+      <div class="section-one">
+        <p class="footer-p">ვებსაიტი წარმოადგენს ეროვნულ, ინოვაციურ პროექტს</p>
+        <p class="footer-mini-p">ა(ა)იპ - „ქართული ნოტების ფონდი"<br>(ს/კ:405671072)</p>
+        <div class="icons">
+          <a href="https://www.instagram.com/notebiorg/" target="_blank"><img src="../images/instagram.png" class="footer-icon-insta"></a>
+          <a href="https://www.youtube.com/@notebiorg" target="_blank"><img src="../images/youtube.png" class="footer-icon-wide"></a>
+          <a href="https://wolt.com/ka/geo/tbilisi/venue/notebi" target="_blank"><img src="../images/wolt.png" class="footer-icon-wide"></a>
+          <a href="https://x.com/notebiorg" target="_blank"><img src="../images/X.png" class="footer-icon"></a>
+          <a href="https://www.facebook.com/notebiorg" target="_blank"><img src="../images/facebook.png" class="footer-icon"></a>
+        </div>
+      </div>
+      <div class="section-two">no idea</div>
+      <div class="section-three">
+        <h3 class="contact-title">კონტაქტი</h3>
+        <div class="contact-info">
+          <div class="contact-item"><span class="contact-icon">📍</span><p>თბილისი, საქართველო</p></div>
+          <div class="contact-item"><span class="contact-icon">✉️</span><p>fundofgeorgiannotes@gmail.com</p></div>
+          <div class="contact-item"><span class="contact-icon">📞</span><p>+995 599 70 86 49</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="designer-credit">დიზაინი დამზადებულია
+        <a href="https://www.instagram.com/_nanuukkaa_/" target="_blank" class="designer-link">ნანა კუპრეიშვილის</a> მიერ :)</p>
+    </div>
+  </footer>
+</div>
+
+<!-- Firebase + Phone Auth Script -->
+<script type="module" src="../js/register.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
+
 <script>
-(function() {
-    function fadeSubscribeBox() {
-      const box = document.querySelector('.subscribe-box');
-      if (!box) return;
-      const top = box.getBoundingClientRect().top;
-      if (top < window.innerHeight - 150) {
-        box.classList.add('fade-in');
-      }
-    }
+  (function() {
+    emailjs.init("hrc6pCDRrx7COwTCX");
+  })();
 
-    window.addEventListener('scroll', fadeSubscribeBox);
-    window.addEventListener('DOMContentLoaded', fadeSubscribeBox);
-  });
+  function sendRegistrationEmail(email, username) {
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      to_email: email,
+      username: username
+    })
+    .then(() => {
+      console.log("Email sent");
+    })
+    .catch((err) => {
+      console.error("Email error:", err);
+    });
+  }
 </script>
 
 </body>

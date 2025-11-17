@@ -1,16 +1,11 @@
 @font-face {
             font-family: 'DM Grigol Robakidze';
-            src: url('https://fonts.cdnfonts.com/s/93168/bpg_nino_mtavruli_normal.woff') format('woff');
+            src: url('../DM-Grigol-Robakidze.ttf') format('truetype');
             font-weight: 400;
             font-style: normal;
         }
 
-        @font-face {
-            font-family: 'BPG Glaho WEB Caps';
-            src: url('https://fonts.cdnfonts.com/s/14951/bpg_glaho_web_caps.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
+        @import url("//cdn.web-fonts.ge/fonts/bpg-glaho-web-caps/css/bpg-glaho-web-caps.min.css");
 
         html {
             scroll-behavior: smooth;
@@ -361,3 +356,111 @@
         .footer-container.mobile{
             display: none;
         }
+
+        /* Login Section — matching registration style */
+        .login-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 80px 20px;
+        background: #fff;
+        }
+
+        .login-container {
+        width: 100%;
+        max-width: 520px;
+        background: #f7f7f7;
+        padding: 40px 35px;
+        border-radius: 18px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        font-family: 'DM Grigol Robakidze', sans-serif;
+        }
+
+        .login-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 35px;
+        color: #1a1a1a;
+        }
+
+        .login-form .form-group {
+        margin-bottom: 22px;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .login-form label {
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: #333;
+        }
+
+        .login-form input {
+        padding: 12px 14px;
+        font-size: 18px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        outline: none;
+        transition: 0.2s;
+        }
+
+        .login-form input:focus {
+        border-color: #2E2E2E;
+        }
+
+        .show-password {
+        font-size: 14px;
+        color: #2E2E2E;
+        cursor: pointer;
+        margin-top: 5px;
+        user-select: none;
+        transition: color 0.2s ease;
+        }
+
+        .show-password:hover {
+        color: #555;
+        }
+
+        .login-btn {
+        width: 100%;
+        margin-top: 15px;
+        padding: 14px;
+        font-size: 22px;
+        background: #2E2E2E;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        .login-btn:hover {
+        opacity: 0.85;
+        transform: translateY(-2px);
+        }
+
+        .register-redirect {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        }
+
+        .register-redirect a {
+        color: #2E2E2E;
+        text-decoration: underline;
+        }
+
+        .show-password {
+        font-size: 14px;
+        color: #2E2E2E;
+        cursor: pointer;
+        margin-top: 5px;
+        user-select: none;
+        transition: color 0.2s ease;
+        }
+
+        .show-password:hover {
+        color: #555;
+        }
+
+
