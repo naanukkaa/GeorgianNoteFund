@@ -279,7 +279,7 @@
         }
 
         .section-two{
-            margin-left: 270px;
+            margin-left: 100px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -292,7 +292,7 @@
         }
 
         .section-three {
-            margin-left: 270px;
+            margin-left: 100px;
         }
 
         .contact-title {

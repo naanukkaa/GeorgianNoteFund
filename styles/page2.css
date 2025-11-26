@@ -218,6 +218,7 @@
             padding: 0 1rem;
         }
 
+        
         footer {
             background-color: #2E2E2E;
             color: white;
@@ -232,24 +233,15 @@
             color: #ccc;
         }
 
-        .footer-container {
+        .footer-container{
             font-family: 'DM Grigol Robakidze', 'BPG Glaho WEB Caps', sans-serif;
             max-width: 2182px;
+            height: 400px;
             background-color: transparent;
             color: white;
             padding: 60px 50px;
             display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
         }
-
-        footer {
-            background-color: #2E2E2E;
-            color: white;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
         .section-one{
             width: 350px;
         }
@@ -289,7 +281,7 @@
         }
 
         .section-two{
-            margin-left: 270px;
+            margin-left: 100px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -302,7 +294,7 @@
         }
 
         .section-three {
-            margin-left: 270px;
+            margin-left: 100px;
         }
 
         .contact-title {
@@ -341,6 +333,72 @@
             padding-top: 15px;
             margin-top: 20px;
             text-align: center;
+        }
+
+        .designer-credit {
+            margin: 0;
+            font-size: 16px;
+            color: #ccc;
+            font-family: 'DM Grigol Robakidze', sans-serif;
+        }
+
+        .designer-link {
+            color: #E4405F;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .designer-link:hover {
+            color: #C13584;
+            transform: translateY(-1px);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .hero-new {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 4rem 1rem;
+            background-color: #f7f7f7;
+        }
+
+        .hero-left, .hero-right {
+            flex: 1 1 300px;
+            min-height: 300px;
+            background-color: #e5e5e5;
+            border-radius: 12px;
+        }
+
+        .row-section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .sec-title {
+            font-family: 'BPG Glaho WEB Caps', sans-serif;
+            font-size: 28px;
+            color: #000;
+        }
+
+        .sec-link {
+            font-family: 'DM Grigol Robakidze', sans-serif;
+            font-size: 18px;
+            color: #2E2E2E;
+            cursor: pointer;
+        }
+
+        .sec-link:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
         }
 
         .designer-credit {
